@@ -41,7 +41,7 @@ async def force_sub(bot, msg):
 async def auto_delete(Bot, msg):
     chat, msg_id = msg.chat.id, msg.message_id
     try:       
-       await asyncio.sleep(3600) # not tested, edit if you need
+       await asyncio.sleep(7200) # not tested, edit if you need
        await Bot.delete_messages(chat, msg_id)
     except Exception as e:
        print(e)
